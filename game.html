@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+	<title>Ra One | Balan S.P - My First HTML 5 Game</title>
+</head>
+<style>
+	body {background: url("images/bg.jpg") no-repeat scroll center 0 #000000; font-family: Arial, Helvetica, sans-serif;font-size: 12px;min-width: 1000px;}
+	.main{width:900px; border: solid 1px #049ff3; margin:0 auto;}
+	.blueline{border-bottom: solid 1px #049ff3;}
+	ul{list-style-type:none;}
+	.scoreboard{float:left; margin: 24px auto auto 10px;padding: 10px;width: 150px; border-radius: 10px;  background-color: #0C394B; color:#fff}
+	.scoreboard li {margin-left: 10px;margin-top: 5px;text-shadow: 0 0 5px #51D3FC;}
+	.clear{clear:both;}	
+	.kareena{float:right; margin:10px 10px 0 auto}
+	.love{float:right;  margin:0 16px 10px auto  }
+	.love li{float:right; background: url("images/heart.png") no-repeat; width:20px; height:16px; display:none; }
+	.ronelogo{float: left;margin:10px}
+	.footertext{float:left; color: #BFBFBF; font-size: 20px; margin:16px auto auto 200px;  width: 180px; text-shadow: 0 0 15px #51D3FC;}
+	.thanks{float:right; width:200px; color:#8a8a8a;  margin:18px 10px auto auto}
+	.thanks a{color:#8a8a8a;text-decoration:none}
+	.thanks a:hover{text-decoration:underline}
+	canvas{}
+	}
+</style>
+<body onload="init()">	
+	<div class="main">	
+		<header class="blueline">
+			<ul class="scoreboard" >
+				<li id="life">RaOne Life : 100%</li>
+				<li id="power">Your Power : 100%</li>
+			</ul>
+			<figure class="kareena">
+				<img id="kareena" src="images/excit.png" width="76" height="88" alt="Kareena Kapoor" title="kareena kapoor"/>
+			</figure>
+			<div class="clear"></div>
+			<ul class="love">
+				<li id="love3"></li>
+				<li id="love2"></li>
+				<li id="love1"></li>
+			</ul>
+			<div class="clear"></div>
+		</header>
+		
+		<section>
+			<canvas id="canvas" width="900" height="500" class="blueline"></canvas>
+		</section>
+		
+		<footer>
+			<figure class="ronelogo">
+				<img src="images/raonelogo.png" width="156" height="44" alt="Raone Logo" title="Raone Logo"/>
+			</figure>
+			<div class="footertext">A Game in HTML 5.</div>
+			<div class="thanks">| <a href="#" title="Thanks to"> Thanks </a> |  <a href="#" title="Reference to">Reference</a>  | <a href="#" title="Disclaimers">Disclaimers </a> |</div>
+			<div class="clear"></div>
+		</footer>
+	</div>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>
